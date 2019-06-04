@@ -177,45 +177,6 @@ public class TickerScreenShort extends BorderPane {
 			ordersPanelContentList.remove(idx - 1);
 		});
 
-		// setSelectedOrdersToQueue.setOnAction(evt -> {
-		// ObservableList<Node> allOrders =
-		// getOrdersPanelContent().getChildren();
-		// ObservableList<OrderRowScreenShort> selectedOrders =
-		// FXCollections.observableArrayList();
-		// selectedOrders.clear();
-		//
-		// for (Node order : allOrders) {
-		// if (((OrderRowScreenShort)
-		// order).getOrderBusinessObject().getOrderSelected()) {
-		// DecimalFormat df = new DecimalFormat("#");
-		// OrderRowScreenShort shortOrder = (OrderRowScreenShort) order;
-		// Double
-		// amountOfSharesSold=Double.valueOf(df.format(Double.valueOf(this.getNumberOfOpenedPositions().getText())*(Double.valueOf(shortOrder.getQuantitiyInPercent().getText())/100)));
-		// Double amountOfSharesSoldDisplayed=
-		// amountOfSharesSold<1?1:amountOfSharesSold;
-		//
-		// SharedObject.getSharedStringList().clear();
-		//
-		// SharedObject.getSharedStringList().add(
-		//
-		// "Sell Order of: "+SharedObject.getTicker(this)+
-		// " Number of open positions:
-		// "+this.getNumberOfOpenedPositions().getText()+
-		// " Percent of shares to sell at this order:
-		// "+shortOrder.getQuantitiyInPercent().getText()+"%"+
-		// " Actual amount of shares sold "+amountOfSharesSoldDisplayed+
-		// " at the price of:
-		// "+(Double.valueOf(SharedObject.getTOSFeed(this))-Double.valueOf(shortOrder.getAmountToGetTheDesiredPrice().getText()))+
-		// " at the time of: "+this.getOrderAt()
-		//
-		// );
-		// selectedOrders.add(shortOrder);
-		// }
-		// }
-		// System.out.println(selectedOrders);
-		//
-		// });
-
 		shortCancelButtonSetup(this);
 		shortSETButtonSetup(buyScreenReference, this); 
 		

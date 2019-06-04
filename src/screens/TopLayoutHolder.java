@@ -91,13 +91,8 @@ public class TopLayoutHolder extends VBox {
 						for (Node tickerScreenHolder : contentFinal.getChildren()) {
 
 							TickerScreenShort shortScreen = ((TickerScreenHolder) tickerScreenHolder).getShortScreen();
-							shortScreen.getNumberOfOpenedPositions().setText(positions.get(shortScreen.getBuyScreenReference().getTickerName().getText()));
-							
-							System.out.println(positions.size()+" ZZZZZZZZZ");
-							
-							System.out.println(positions.get(shortScreen.getBuyScreenReference().getTickerName().getText())+" LLLLLLLL");
-							
-							System.out.println(shortScreen.getBuyScreenReference().getTickerName().getText()+" KKKKKKKKKK");
+							shortScreen.getNumberOfOpenedPositions().setText(positions.get(shortScreen.getBuyScreenReference().getTickerName().getText()));							
+					
 
 						}
 																	

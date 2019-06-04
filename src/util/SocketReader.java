@@ -84,12 +84,6 @@ public class SocketReader {
 		@Override
 		public void run() {
 
-//			try {
-//				wait();
-//			} catch (InterruptedException e1) {
-//				e1.printStackTrace();
-//			}
-
 			try {
 				if (!serverUDPSocket.isClosed()) {
 					
@@ -162,15 +156,10 @@ public class SocketReader {
 		int indexOfDotTime = outTimePreFormat.lastIndexOf(".");
 		String outTime = new String(outTimePreFormat.substring(0, indexOfDotTime)); 
 		
-//
-//		System.out.println("outTimePreFormat "+ outTimePreFormat);
-//		System.out.println("indexOfDotTime+1 "+ indexOfDotTime+1);
-//		System.out.println("outTime "+ outTime);
-//		System.out.println("outPrice "+ outPrice);
+
 		
 		
 		return new String[] {outTime, outPrice};
-		//return outPrice;		
 	}
 	
 	

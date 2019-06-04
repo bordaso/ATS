@@ -95,11 +95,7 @@ public class TickerScreenLong extends BorderPane {
 		// ordersPanelContent.setBorder(getBorder());
 
 		String cssLayout = "-fx-border-color: black;\n" + "-fx-border-insets: 5;\n" + "-fx-border-width: 3;\n";
-		// +
-		// "-fx-border-style: dashed;\n";
 
-		// VBox yourBox = new VBox();
-		// ordersPanelContent.setStyle(cssLayout);
 
 		ordersPanel.setFitToWidth(true);
 		ordersPanel.setPrefHeight(150);
@@ -144,12 +140,6 @@ public class TickerScreenLong extends BorderPane {
 	private void setupActionButtons() {
 
 		getTickerData.setOnAction(evt -> {
-			// RandomString gen = new RandomString(8,
-			// ThreadLocalRandom.current());
-			//
-			// tickerName.setText(gen.nextString());
-			// tickerTOSFeed.setText(String.valueOf(ThreadLocalRandom.current().nextInt(1,
-			// 100 + 1)));
 
 			try {
 				APICaller.callGetTickerData(this);
